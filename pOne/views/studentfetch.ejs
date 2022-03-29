@@ -1,0 +1,38 @@
+
+<h1> details of student is<%= student.length %> </h1>
+<table border="1">
+<tr>
+<th>roll</th>
+<th>name</th>
+<th>place</th>
+<th>sub1</th>
+<th>sub2</th>
+<th>marks1</th>
+<th>marks2</th>
+</tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+<td>
+    <%= student[i].roll %>
+    </td>
+    <td>
+    <%= student[i].name %>
+    </td>
+    <td>
+    <%= student[i].place %>
+    </td>
+     <td>
+    <%= student[i].sub1 %>
+    </td>
+    <td>
+    <%= student[i].sub2%>
+    </td>
+    <td>
+    <%= student[i].marks1%>
+    </td>
+    <td>
+    <%= student[i].marks2%>
+    </td>
+</tr>
+      <% } %>
+    </table>
