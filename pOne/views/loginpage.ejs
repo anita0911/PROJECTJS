@@ -1,0 +1,38 @@
+<html>
+   <head>
+    <style>
+       h1 {text-align: center;}
+      p {text-align: center;}
+      div {text-align: center;}
+      body{background-color: rgba(53, 47, 79, 0.397);}
+    </style>
+  </head>
+  <body>
+   <div class="loginpage">
+<h1>WELCOME TO LOGIN PAGE</h1>
+<form method="POST" name="form1" action="/auth">
+   <label for="username">
+      <!-- font awesome icon -->
+      <i class="fas fa-user"></i></label>
+    <label >Enter your user ID</label>
+    <input type="text" id="uid" name="uid"><br><br>
+
+    <label >Enter your password</label>
+    <input type="text" id="password" name="password"><br><br>
+
+    <input type="submit" value="Login">
+    
+ </form>
+ 
+    <% if (errMsg !== '') {%> 
+      <p style="color:red; font-size:70%"><%= errMsg %></p> 
+  <% } else {%>
+      <p style="color:green; font-size:70%"><%= msg %></p> 
+  <% } %>
+  <form method="POST" name="form2" action="/loginDetails">
+    
+   <input type="submit" value="signup">
+   </form>
+   </div>
+</body>
+ </html>

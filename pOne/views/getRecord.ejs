@@ -1,0 +1,54 @@
+<h1> details of student is<%= student.length %> </h1>
+<a href='/regForm'><input type="submit"value="add student"></a>
+<table border="1">
+<tr>
+<th>uid</th>
+<th>name</th>
+<th>password</th>
+<th>gender</th>
+<th>education</th>
+<th>workexp</th>
+<th>age</th>
+<th>attendanceCount</th>
+<th>lastUpdatedDate</th>
+<th>presentDate</th>
+</tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+<td>
+    <%= student[i].uid %>
+    </td>
+    <td>
+    <%= student[i].name %>
+    </td>
+    <td>
+    <%= student[i].password %>
+    </td>
+     <td>
+    <%= student[i].gender %>
+    </td>
+    <td>
+    <%= student[i].education%>
+    </td>
+    <td>
+    <%= student[i].workexp%>
+    </td>
+    <td>
+    <%= student[i].age%>
+    </td>
+    <td>
+      <%= student[i].attendanceCount%>
+      </td>
+      <td>
+      <%= student[i].lastUpdatedDate%>
+      </td>
+      <td>
+      <%= student[i].presentDate%>
+      </td>
+    <td>
+      <a href='/getRecordbyid/<%=student[i].uid%>'>Update</a>
+      <a href='/deleteRecord/<%=student[i].uid%>'onclick="return confirm('confirm or not')">Delete</a>
+      </td>
+</tr>
+      <% } %>
+    </table>

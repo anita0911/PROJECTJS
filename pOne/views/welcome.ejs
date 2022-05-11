@@ -1,0 +1,69 @@
+<%- include('header') %>
+
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>
+        DELHI PUBLIC SCHOOL
+    </title>
+</head>
+  
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            
+            </div>
+            <li><a href="#web">ABOUT</a></li>
+            <li><a href="displayrecord">NOTICES</a></li>
+           <li><a href="/contact">CONTACT</a></li> 
+           <li><a href="/updateAttendence">updateAttendence</a></li>
+
+        </ul>
+          <div>
+            <% if (msg=== 'success') { %> 
+                <h4 style="color:green; font-size:70%;">
+                <p>attendance sucessfully marked! </p>
+                </h4>
+            <% } else if(msg==='failure'){%>
+                <h4 style="color:rgb(0, 217, 255); font-size:70%;"> 
+                <p>You have already marked the attendance! </p>
+            </h4>
+            <% } %>
+          </div>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button> 
+
+        </div>
+        <div style="float:right">
+          <form align="right" name="form1" method="post" action="logout">
+             <label class="logoutLblPos">
+              <a href="logout" class="btn btn-primary">Logout</a>
+            </label>
+          </form>
+          </div>
+    </nav>
+    
+        <h1> today notice is</h1>
+        
+        
+         
+        
+           
+    
+ 
+    
+   
+</body>
+
+  <marquee>
+    durga pooja vaccation started
+   </marquee>
+   
+   
+  
+ 
+        
+</html>

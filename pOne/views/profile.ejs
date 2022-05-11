@@ -1,0 +1,63 @@
+<%- include('adprofile') %>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <body>
+
+    <div class="sidebar">
+     <li> <a  href="getRecord">STUDENT DETAILS</a></li>
+      <li><a href="displayrecord">NOTICE</a></li>
+      <li><a href="messagerecord">UPDATE MESSAGE</a></li>
+     </div>
+    
+          
+       
+        <div style="float:right">
+        <form align="right" name="form1" method="post" action="logout">
+        <label class="logout">
+        <a href="adminlogout" class="btn btn-primary">LOGOUT</a>
+        </label>
+        </form>
+       </div>
+       </nav>
+   
+     
+    </div>
+    <div>
+    <section class="firstsection">
+      <h1>admin</h1>
+      </div>
+  </section>
+</body>
+<div class="contentBox">
+<center>
+<marquee bgcolour="yellow"width="300%"direction="up">
+<h1> today notice is</h1>
+<h1> MESSAGE <%= student.length %> </h1>
+<table border="0">
+<tr>
+
+<th>active</th>
+<th>Date</th>
+
+</tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+
+    <td>
+    <%= student[i].active %>
+    </td>
+    <td>
+    <%= student[i].Date %>
+    </td>
+    </tr>
+      <% } %>
+    </table>
+</center>
+</marquee>
+
+</div>
+
+</html>

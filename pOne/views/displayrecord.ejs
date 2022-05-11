@@ -1,0 +1,22 @@
+<h1> MESSAGE <%= student.length %> </h1>
+<table border="0">
+<tr>
+
+<th>active</th>
+<th>Date</th>
+
+</tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+
+    <td>
+    <%= student[i].active %>
+    </td>
+    <td>
+    <%= student[i].Date %>
+    </td>
+    
+    
+</tr>
+      <% } %>
+    </table>

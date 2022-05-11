@@ -1,0 +1,28 @@
+<h1> details of student is<%= student.length %> </h1>
+<a href='/messageForm'><input type="submit"value="ADD MESSAGE"></a>
+<table border="1">
+<tr>
+<th>mid</th>
+<th>active</th>
+<th>older</th>
+
+</tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+<td>
+    <%= student[i].mid %>
+    </td>
+    <td>
+    <%= student[i].active %>
+    </td>
+    <td>
+    <%= student[i].Date %>
+    </td>
+    
+    <td>
+      <a href='/messageRecordbyid/<%=student[i].mid%>'>Update</a>
+      <a href='/deletemessage/<%=student[i].mid%>'onclick="return confirm('confirm or not')">Delete</a>
+      </td>
+</tr>
+      <% } %>
+    </table>

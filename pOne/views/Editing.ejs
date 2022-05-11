@@ -1,0 +1,28 @@
+<h1> Edit your Details</h1>
+
+<form method="POST" name="form1" action="/updateRecordbyid?id=<%=student.uid %>">
+    
+     <label >Enter your  name</label>
+    <input type="text"placeholder="name" id="name" name="name"value="<%=student.name%>"><br><br>
+    
+    <label >Enter your password</label>
+    <input type="text" placeholder="password" id="password" name="password"value="<%=student.password%>"><br><br>
+
+
+    <label >Enter your gender</label>
+    <input type="text" placeholder="gender" id="gender" name="gender"value="<%=student.gender%> "><br><br>
+
+    <label >Enter your Educational qualification</label>
+    <input type="text" placeholder ="education" id="education" name="education"value="<%=student.education%> "><br><br>
+
+    <label >Enter your workexp</label>
+    <input type="text" placeholder="workexp" id="workexp" name="workexp"value="<%=student.workexp%> "><br><br>
+
+    <label >Enter your Age</label>
+    <input type="text" placeholder="age" id="age" name="age"value="<%=student.age%> "><br><br>
+     <button>SAVE</button>
+
+    <input type="hidden" value="<%=student.uid%>"><br>
+
+    </form>
+    <a href='/getRecord'> <input type="submit" value="person Details"></a>

@@ -1,0 +1,40 @@
+<h1> details of student is<%= student.length %> </h1>
+<a href='/Formadmin'><input type="submit"value="add student"></a>
+<table border="1">
+<tr>
+<th>aid</th>
+<th>pass</th>
+<th>name</th>
+<th>age</th>
+<th>adharno</th>
+<th>contact</th>
+
+</tr>
+<% for(var i=0; i<JSON.stringify(student.length);i++) { %>
+<tr>
+<td>
+    <%= student[i].aid %>
+    </td>
+    <td>
+    <%= student[i].pass %>
+    </td>
+    <td>
+    <%= student[i].name %>
+    </td>
+     <td>
+    <%= student[i].age%>
+    </td>
+    <td>
+    <%= student[i].adharno%>
+    </td>
+    <td>
+    <%= student[i].contact%>
+    </td>
+    
+    <td>
+      <a href='/adminRecordbyid/<%=student[i].aid%>'>Update</a>
+      <a href='/deleteadmin/<%=student[i].aid%>'onclick="return confirm('confirm or not')">Delete</a>
+      </td>
+</tr>
+      <% } %>
+    </table>

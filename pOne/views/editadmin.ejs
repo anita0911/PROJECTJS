@@ -1,0 +1,30 @@
+
+     <h1> Edit your Details</h1>
+
+     <form method="POST" name="form1" action="/updateadminbyid?id=<%=student.aid %>">
+                   
+    <label >Enter your  pass</label>
+    <input type="text"placeholder="pass" id="pass" name="pass"value="<%=student.pass%>"><br><br>
+                   
+    <label >Enter your name</label>
+    <input type="text" placeholder="name" id="name" name="name"value="<%=student.name%>"><br><br>
+               
+     <label >Enter your age</label>
+    <input type="text" placeholder="age" id="age" name="age"value="<%=student.age%> "><br><br>
+               
+    <label >Enter your adharno</label>
+    <input type="text" placeholder ="adharno" id="adharno" name="adharno"value="<%=student.adharno%> "><br><br>
+               
+     <label >Enter your contact</label>
+     <input type="text" placeholder="contact" id="contact" name="contact"value="<%=student.contact%> "><br><br>
+               
+                   
+           <button>SAVE</button>
+           <input type="hidden" value="<%=student.aid%>"><br>
+               
+               </form>
+               <a href='/adminRecord'> <input type="submit" value="person Details"></a>
+              
+         
+
+

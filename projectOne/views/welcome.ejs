@@ -1,0 +1,49 @@
+<%- include('regg') %>
+
+    <div class="firstsection">
+        <h1>TRANSACTION DETAILS</h1>
+    </div>
+    <div class="log">
+        <li><a href="/logout">LOGOUT</a></li>
+    </div>
+
+    <div class="form-center">
+        <div>
+            <form id="login" method="post" action="/checkmail">
+                <table>
+      
+                    <tr>
+                        <td>
+                            <label><b> Deposits:</b> </label>
+                            <select name="Deposits">
+                            <option value="0">0</option>
+                            <option value="3">3</option>
+                            <option value="1">1</option>
+                        </select>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b> Description:</b> </label>
+                            <select name="Description">
+                            <option value="ATM">ATM</option>
+                            <option value="Cash">CASH</option>
+                            <option value="Debit Card">Debit</option>
+                        </select>
+                           
+                        </td>
+                    </tr>
+           
+    
+    
+                    <tr>
+                        <td><input type="submit" name="log" id="log" value="search"></td>
+                        <br><br>
+                    </tr>
+    
+                    </tr>   
+          </table>
+        </form>
+    </div>
+    </div>
